@@ -1,11 +1,11 @@
 [
   {
-    "title": "Project Title 1",
-    "description": "프로젝트에 대한 간단한 설명을 여기에 작성합니다.",
+    "title": "Real-time Fall Detection System",
+    "description": "Developed a ROS2-based project for parallel real-time processing and vision-based fall detection",
     "link": "project1.html"
   },
   {
-    "title": "Project Title 2",
+    "title": "Coworker",
     "description": "또 다른 프로젝트에 대한 설명을 여기에 작성합니다.",
     "link": "project2.html"
   }
