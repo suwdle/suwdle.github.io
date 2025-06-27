@@ -1,12 +1,17 @@
 [
   {
+    "title": "FOCUS",
+    "description": "Developed a ROS2-based project for parallel real-time processing and vision-based fall detection",
+    "link": "./Projects/FOCUS.html"
+  },
+  {
     "title": "Real-time Fall Detection System",
     "description": "Developed a ROS2-based project for parallel real-time processing and vision-based fall detection",
-    "link": "project1.html"
+    "link": "./Projects/Real-time_Fall_Detection_System.html"
   },
   {
     "title": "Coworker",
     "description": "An intelligent RAG solution for SMEs that analyzes financial documents to recommend support programs and provides real-time market insights using a multi-agent LangGraph architecture.",
-    "link": "project2.html"
+    "link": "./Projects/Coworker.html"
   }
 ]
