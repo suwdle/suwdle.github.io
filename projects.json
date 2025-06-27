@@ -6,7 +6,7 @@
   },
   {
     "title": "Coworker",
-    "description": "또 다른 프로젝트에 대한 설명을 여기에 작성합니다.",
+    "description": "An intelligent RAG solution for SMEs that analyzes financial documents to recommend support programs and provides real-time market insights using a multi-agent LangGraph architecture.",
     "link": "project2.html"
   }
 ]
