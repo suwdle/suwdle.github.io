@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('/projects.json')
+    fetch('./projects.json')
         .then(response => {
             if (!response.ok) throw new Error('프로젝트 데이터를 불러올 수 없습니다.');
             return response.json();
