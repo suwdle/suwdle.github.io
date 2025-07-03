@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOCUS - Real-Time Fall Detection System</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-detail.css">
+</head>
+<body>
+    <header>
+        <h1>FOCUS - Real-Time Fall Detection System</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects">Back to Projects</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Project Overview</h2>
+            <p>
+                FOCUS (Fall detection and Observation with Connected Urgency System) was developed to address the limitations of conventional fall detection technologies, which typically focus only on post-incident analysis. With an aging population, there is increasing demand for systems capable of detecting falls in real time and initiating emergency responses without user intervention.
+            </p>
+            <p>
+                The system combines multiple ROS2 nodes with a backend service and web dashboard, enabling real-time monitoring, voice interaction, and automatic emergency alerts. In particular, efforts were focused on integrating fall event detection with a user-accessible monitoring interface and automated SMS notification logic.
+            </p>
+            <p>
+                I participated in this project as a project manager, contributing to planning, backend API implementation, and dashboard development.
+            </p>
+
+            <h3>Features</h3>
+            <ul>
+                <li><strong>Web-Based Monitoring Dashboard:</strong> A React-based interface visualizes camera feeds, node status, fall detection results, and user interactions. It communicates with ROS2 nodes via WebSocket for real-time data updates.</li>
+                <li><strong>Emergency SMS Notification:</strong> If a fall is detected and no user response is received, an alert message is automatically sent to a registered contact using the Solapi SMS API. The content of the message is dynamically composed by the LLM-based agent based on the situation and voice input.</li>
+                <li><strong>Fall Detection Model:</strong> A GAT-based classifier processes keypoints extracted by YOLOv8-pose. Edge features (distance, angle, confidence) and PointOut augmentation are used to improve robustness.</li>
+                <li><strong>ROS2 Modular Architecture:</strong> Individual nodes manage camera input, pose estimation, classification, speech processing, and data aggregation. Each runs independently to ensure parallel execution and fault isolation.</li>
+                <li><strong>LLM Voice Agent:</strong> The system includes a voice agent that processes speech inputs and provides real-time information such as weather updates or news summaries. It is implemented using LangGraph and OpenAI API.</li>
+                <li><strong>Alert Toggle with Redis:</strong> Users can enable or disable fall alerts through the dashboard, and the current status is stored in Redis and synchronized with all relevant services.</li>
+            </ul>
+
+            <h3>Technology Used</h3>
+            <ul>
+                <p>Python, ROS2, Pytorch Geometric, React, LangGraph, FastAPI, Redis</p>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FOCUS Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
