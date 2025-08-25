@@ -194,3 +194,78 @@ footer {
     color: #fff;
     margin-top: 20px;
 }
+
+/* Publication List Styling */
+.publication-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.publication-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.publication-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.publication-item h3 {
+    margin: 0 0 12px 0;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.publication-item p {
+    margin: 0 0 8px 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+.publication-item a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 14px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.2s ease;
+    align-self: flex-start;
+}
+
+.publication-item a:hover {
+    background-color: #0056b3;
+}
+
+.status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #fff;
+}
+
+.status-accepted {
+    background-color: #28a745;
+}
+
+.status-under-review {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.status-published {
+    background-color: #17a2b8;
+}
