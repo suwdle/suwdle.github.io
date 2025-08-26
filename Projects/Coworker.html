@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,26 +22,34 @@
     <main>
         <section>
             <h2>Project Overview</h2>
-            <p>RAG Solution for Small and Medium Enterprises</p>
-            <p>This system analyzes corporate financial management documents and recommends appropriate support programs. It also retrieves real-time information through external APIs to provide diverse and accurate descriptions of comparisons with other companies and current industry conditions.</p>
-            
+            <p>AI Recommendation & Financial Analysis Chatbot for SMEs</p>
+            <p>
+              Coworker helps small and medium businesses quickly discover suitable
+              financial products and understand their own financial statements.
+              It combines a hybrid recommendation engine (semantic similarity + keyword matching)
+              with a RAG-based chatbot that explains key ratios in plain language. :contentReference[oaicite:3]{index=3} :contentReference[oaicite:4]{index=4}
+            </p>
+
             <h3>Features</h3>
             <ul>
-                <li>Developed using LangGraph, this solution goes beyond simple RAG by enabling the use of appropriate tools based on user intent.</li>
-                <li>Tasks are distributed among different agents, breaking down complex work into smaller, manageable components.</li>
-                <li>The system provides feedback on responses to fill in missing information and deliver more accurate answers.</li>
+                <li><strong>Hybrid Product Ranking:</strong> We generate a company-specific query and keywords from profile data, then score products using cosine similarity over embeddings plus keyword match signals. Top candidates are returned to the user. :contentReference[oaicite:5]{index=5}</li>
+                <li><strong>Embedding Fine-Tuning:</strong> A synthetic triplet dataset (anchor/positive/negative) trains the embedding model via Triplet Loss, improving separation (Avg. Pos 0.72 vs 0.61; Avg. Neg 0.06 vs 0.50; margin ↑ to 0.66). :contentReference[oaicite:6]{index=6}</li>
+                <li><strong>RAG Financial Chatbot:</strong> Users upload statements; the agent retrieves top-k evidence chunks and generates verified answers for metrics such as liquidity and debt ratios. :contentReference[oaicite:7]{index=7}</li>
             </ul>
 
             <h3>Technologies Used</h3>
-            <p>Python, LangGraph, Docker, AWS Bucket</p>
+            <p>Python, Scikit-learn, LangGraph, Vector Embeddings (Hybrid Search), Docker</p>
 
             <h3>Live Demo / Repository</h3>
-            <p><a href="#" target="_blank">View Live Demo</a> | <a href="https://github.com/KB-AI-KoBo" target="_blank">GitHub Organization</a></p>
+            <p>
+              <a href="https://co-worker.site/" target="_blank" rel="noopener">View Live Demo</a> |
+              <a href="https://github.com/KB-AI-KoBo" target="_blank" rel="noopener">GitHub Organization</a> :contentReference[oaicite:8]{index=8}
+            </p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 My GitHub Page. All rights reserved.</p>
+        <p>&copy; 2025 Coworker</p>
     </footer>
 </body>
-</html> 
+</html>
