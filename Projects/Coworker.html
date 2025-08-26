@@ -27,22 +27,22 @@
               Coworker helps small and medium businesses quickly discover suitable
               financial products and understand their own financial statements.
               It combines a hybrid recommendation engine (semantic similarity + keyword matching)
-              with a RAG-based chatbot that explains key ratios in plain language. :contentReference[oaicite:3]{index=3} :contentReference[oaicite:4]{index=4}
+              with a RAG-based chatbot that explains key ratios in plain language.
             </p>
 
             <h3>Features</h3>
             <ul>
-                <li><strong>Hybrid Product Ranking:</strong> We generate a company-specific query and keywords from profile data, then score products using cosine similarity over embeddings plus keyword match signals. Top candidates are returned to the user. :contentReference[oaicite:5]{index=5}</li>
-                <li><strong>Embedding Fine-Tuning:</strong> A synthetic triplet dataset (anchor/positive/negative) trains the embedding model via Triplet Loss, improving separation (Avg. Pos 0.72 vs 0.61; Avg. Neg 0.06 vs 0.50; margin ↑ to 0.66). :contentReference[oaicite:6]{index=6}</li>
+                <li><strong>Hybrid Product Ranking:</strong> We generate a company-specific query and keywords from profile data, then score products using cosine similarity over embeddings plus keyword match signals. Top candidates are returned to the user.</li>
+                <li><strong>Embedding Fine-Tuning:</strong> A synthetic triplet dataset (anchor/positive/negative) trains the embedding model via Triplet Loss, improving separation.</li>
                 <li><strong>RAG Financial Chatbot:</strong> Users upload statements; the agent retrieves top-k evidence chunks and generates verified answers for metrics such as liquidity and debt ratios. :contentReference[oaicite:7]{index=7}</li>
             </ul>
 
             <h3>Technologies Used</h3>
-            <p>Python, Scikit-learn, LangGraph, Vector Embeddings (Hybrid Search), Docker</p>
+            <p>Python, Scikit-learn, LangGraph, Vector Embeddings, Docker</p>
 
-            <h3>Live Demo / Repository</h3>
+            <h3>Public Page / Repository</h3>
             <p>
-              <a href="https://co-worker.site/" target="_blank" rel="noopener">View Live Demo</a> |
+              <a href="https://co-worker.site/" target="_blank" rel="noopener">View Public Page</a> |
               <a href="https://github.com/KB-AI-KoBo" target="_blank" rel="noopener">GitHub Organization</a> :contentReference[oaicite:8]{index=8}
             </p>
         </section>
